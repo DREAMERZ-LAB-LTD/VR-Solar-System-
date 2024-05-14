@@ -4,19 +4,8 @@ using UnityEngine;
 
 public class SolarController : MonoBehaviour
 {
-    
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public SolarSystemData solarData;
+    public Orbit[] orbits; 
 }
 public enum Solar
 {
@@ -27,6 +16,7 @@ public enum Solar
     Jumpiter,
     Saturn,
     Urenus,
-    Neptune
+    Neptune,
+    Pluto
 }
 

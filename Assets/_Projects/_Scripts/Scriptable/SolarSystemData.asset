@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 909293047fcee064d8838627e590ac79, type: 3}
+  m_Name: SolarSystemData
+  m_EditorClassIdentifier: 
+  planets:
+  - solar: 0
+    description: Mercury is the planet closest to the Sun. It is made up of rock
+      and is the tiniest planet. It is so close to the Sun that it completes its
+      orbit in 88 days and is much hotter than Earth
+    PlaneObj: {fileID: 8978764467769538282, guid: 54e663ed6ff92124ba3e84931bff8669, type: 3}
+  - solar: 1
+    description: Venus is the second planet from the Sun after Mercury. It's also
+      composed of stone. Venus, like Earth, has an atmosphere (air) surrounding it,
+      but it is much thicker than Earth's, and Venus is perpetually clouded.
+    PlaneObj: {fileID: 560833786488114821, guid: ba73b4424e7d1974f82575a23c849c24, type: 3}
+  - solar: 2
+    description: This is our home! Earth is composed of rock and is the only planet
+      with liquid water. The other planets are either excessively hot or excessively
+      cold. It takes the Earth 365 days to orbit the Sun.
+    PlaneObj: {fileID: 7960243769344197870, guid: 91bb96471d120d249ba38dc3c2630602, type: 3}
+  - solar: 3
+    description: Mars is slightly smaller than Earth, but much farther away. It once
+      had an atmosphere similar to that of Earth and Venus, but it no longer has
+      much of one. Mars is reddish in hue and is sometimes referred to as "The Red
+      Planet.
+    PlaneObj: {fileID: 6153443978052708643, guid: 30d81be733d1ddd43af50f6c1a2ef840, type: 3}
+  - solar: 5
+    description: Saturn is well-known for its rings. Galileo spotted the rings for
+      the first time (with a telescope) in 1610, and they are composed of a large
+      number of little ice and dust particles (mostly ice).
+    PlaneObj: {fileID: 4886655930937505732, guid: 6faeafa0b18a8284f982b60a2c2c6570, type: 3}
+  - solar: 4
+    description: Jupiter is the biggest planet in our Solar System. Jupiter has the
+      capacity to hold 1,321 Earths. It is one of the four "gas giants" and is made
+      of gas. Jupiter has 66 moons, one of which is larger than Mercury.
+    PlaneObj: {fileID: 6200441294366033232, guid: ba6dec7108d7d38408d6137ecf5cdda4, type: 3}
+  - solar: 6
+    description: "Uranus is another of the 'gas giants.' Uranus may hold 63 planets
+      the size of Earth. Uranus orbits the Sun every 84 years and has the coldest
+      average temperature of -220\xB0C.\r\n"
+    PlaneObj: {fileID: 6073720410740747172, guid: 7adfd165e0b7ace479946ce9ecc4dfed, type: 3}
+  - solar: 7
+    description: Neptune is the planet that is the furthest away from the Sun. It
+      is 30 times the distance from the Sun as Earth and takes 165 years to orbit
+      the Sun. Neptune is the last of the four 'gas giants,' with a volume 58 times
+      that of Earth.
+    PlaneObj: {fileID: 2109367283062550590, guid: 5793311b710267043928afbeb0c3d48c, type: 3}
+  - solar: 8
+    description: Neptune is the planet that is the furthest away from the Sun. It
+      is 30 times the distance from the Sun as Earth and takes 165 years to orbit
+      the Sun. Neptune is the last of the four 'gas giants,' with a volume 58 times
+      that of Earth.
+    PlaneObj: {fileID: 2140203320816417273, guid: 8ed70776167877e42a8e953fdd89a0c0, type: 3}
+  - solar: 8
+    description: Neptune is the planet that is the furthest away from the Sun. It
+      is 30 times the distance from the Sun as Earth and takes 165 years to orbit
+      the Sun. Neptune is the last of the four 'gas giants,' with a volume 58 times
+      that of Earth.
+    PlaneObj: {fileID: 2140203320816417273, guid: 8ed70776167877e42a8e953fdd89a0c0, type: 3}
