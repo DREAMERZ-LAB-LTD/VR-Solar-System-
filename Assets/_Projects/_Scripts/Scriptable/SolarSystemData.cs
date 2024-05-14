@@ -13,4 +13,9 @@ public class SolarSystemData : ScriptableObject
     }
 
     public PlanetInfo[] planets;
+
+
+
+    
+    
 }
