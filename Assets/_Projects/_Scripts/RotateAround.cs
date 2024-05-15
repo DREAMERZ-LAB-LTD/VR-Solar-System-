@@ -16,7 +16,7 @@ public class RotateAround : MonoBehaviour
             target = this.gameObject.transform;
            
         }
-        speed += Random.Range(7.0f, 14.0f);
+      //  speed += Random.Range(7.0f, 14.0f);
         canMove = true;
     }
 

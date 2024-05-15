@@ -22,6 +22,7 @@ public class InfoPanel : MonoBehaviour
         PlanetScripts temp = other.GetComponentInParent<PlanetScripts>();
         if (temp != null)
         {
+            if (_tragetPlanet == null) return;
             Debug.Log("Hand Exit ======= " + _tragetPlanet);
             Solar _solar = Solar.None;
             SolarController.instance.OnEventCall(_solar);
