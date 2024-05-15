@@ -25,10 +25,17 @@ public class InfoPanel : MonoBehaviour
             Debug.Log("Hand Exit ======= " + _tragetPlanet);
             Solar _solar = Solar.None;
             SolarController.instance.OnEventCall(_solar);
-            _tragetPlanet._infoPanel = null;
+           
             _tragetPlanet.isStay = false;
+            _tragetPlanet._infoPanel = null;
             _tragetPlanet = null;
 
         }
+    }
+
+    private void Update()
+    {
+       
+       
     }
 }

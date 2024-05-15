@@ -67,3 +67,25 @@ MonoBehaviour:
       the Sun. Neptune is the last of the four 'gas giants,' with a volume 58 times
       that of Earth.
     PlaneObj: {fileID: 2140203320816417273, guid: 8ed70776167877e42a8e953fdd89a0c0, type: 3}
+  - solar: 9
+    description: "The Sun's gravity holds the solar system together, keeping everything
+      \u2013 from the biggest planets to the smallest particles of debris \u2013
+      in its orbit. The connection and interactions between the Sun and Earth drive
+      the seasons, ocean currents, weather, climate, radiation belts and auroras.
+      Though it is special to us, there are billions of stars like our Sun scattered
+      across the Milky Way galaxy.\r\n\r\nThe Sun has many names in many cultures.
+      The Latin word for Sun is \u201Csol,\u201D which is the main adjective for
+      all things Sun-related: solar.\nPop Culture\r\nThe Sun has inspired us since
+      ancient times. It\u2019s central to mythology and religion in cultures around
+      the world, including the ancient Egyptians, the Aztecs of Mexico, Native American
+      tribes of North and South America, the Chinese, and many others.\r\n\r\nCountless
+      musicians have written songs about the Sun. The Beatles had a hit in 1969 with
+      \u201CHere Comes the Sun.\u201D Other popular songs that reference the Sun
+      include: \u201CWalkin\u2019 on the Sun\u201D by Smashmouth; \u201CAin\u2019t
+      No Sunshine\u201D by Bill Withers; \u201CWalking on Sunshine\u201D by Katrina
+      and the Waves; \u201CPocketful of Sunshine\u201D by Natasha Bedingfield; and
+      \u201CLet the Sunshine In\u201D by the Fifth Dimension.\r\n\r\nIf you're Superman
+      or a fellow Kryptonian of comic book fame, your powers are heightened by the
+      yellow glow of our Sun. There are several science fiction films featuring the
+      Sun in the storyline.\r\n\r"
+    PlaneObj: {fileID: 3548356298615962880, guid: 5f776740c447e45afb25edbca842de92, type: 3}

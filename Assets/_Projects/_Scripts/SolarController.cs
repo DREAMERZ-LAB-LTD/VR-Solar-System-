@@ -34,6 +34,7 @@ public enum Solar
     Urenus,
     Neptune,
     Pluto,
+    Sun,
     None
 }
 
