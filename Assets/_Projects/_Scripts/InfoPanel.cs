@@ -1,42 +1,68 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Net.NetworkInformation;
 using UnityEngine;
 
 public class InfoPanel : MonoBehaviour
 {
-    public PlanetScripts _tragetPlanet;
+    public PlanetScripts _targetPlanet;
     public Transform _iteamPosition;
     private void OnTriggerEnter(Collider other)
     {
-       if(_tragetPlanet !=null) return;
-        _tragetPlanet = other.GetComponentInParent<PlanetScripts>();
-        if (_tragetPlanet != null)
+        // is there is already a planet attached to realese it and attached new as child
+       var _temp = other.GetComponentInParent<PlanetScripts>();
+        if(_temp !=null)
         {
-            Debug.Log("Hand Enter ======= " + _tragetPlanet);
-            _tragetPlanet._infoPanel = GetComponent<InfoPanel>();
-            _tragetPlanet.isStay = true;
+            if (_targetPlanet != null && !_targetPlanet.isGrabe && _targetPlanet.isStay)
+            {
+                // ReleasePlanet(_targetPlanet); // First Relase last planet
+                _targetPlanet.MoveToTargetPosition(_targetPlanet.targetObject);
+            }
+             SelectedPlanet(_temp);
         }
+       
+
+
+        /*if (_tragetPlanet != null && _tragetPlanet.isStay)
+        {
+            ReleasePlanet();
+        }
+        else
+        {
+            _tragetPlanet = other.GetComponentInParent<PlanetScripts>();
+            SelectedPlanet();
+        }*/
+       
+        
     }
     private void OnTriggerExit(Collider other)
     {
         PlanetScripts temp = other.GetComponentInParent<PlanetScripts>();
         if (temp != null)
         {
-            if (_tragetPlanet == null) return;
-            Debug.Log("Hand Exit ======= " + _tragetPlanet);
-            Solar _solar = Solar.None;
-            SolarController.instance.OnEventCall(_solar);
-           
-            _tragetPlanet.isStay = false;
-            _tragetPlanet._infoPanel = null;
-            _tragetPlanet = null;
-
+            ReleasePlanet(temp);
         }
     }
 
-    private void Update()
+    // To Dipalay the Planet New Position and Attached it's child component 
+    private void SelectedPlanet(PlanetScripts newPlanet)
     {
-       
-       
+        if (newPlanet != null)
+        {
+             Debug.Log("Hand Enter ======= " + _targetPlanet);
+            _targetPlanet = newPlanet;
+            _targetPlanet._infoPanel = GetComponent<InfoPanel>();
+            _targetPlanet.isStay = true;
+        }
+    }
+    // Ungroup and  send the planet to it's start orbit position
+    private void ReleasePlanet(PlanetScripts lastPlanet)
+    {
+        if (lastPlanet == null) return;
+        Solar _solar = Solar.None;
+        SolarController.instance.OnEventCall(_solar);
+        lastPlanet.isStay = false;
+        lastPlanet._infoPanel = null;
+        lastPlanet = null;
     }
 }

@@ -6,10 +6,12 @@ using Unity.VisualScripting;
 using DG.Tweening;
 public class PlanetScripts : MonoBehaviour
 {
-    [SerializeField] private Solar _solar;
+    [SerializeField] public Solar _solar;
     [SerializeField] private TextMeshProUGUI _title;
-    [SerializeField] private Transform targetObject;
-    [SerializeField] private bool isGrabe = false;
+    [SerializeField] public Transform targetObject;
+    [SerializeField] public bool isGrabe = false;
+
+
     public bool isStay = false;
     
     public InfoPanel _infoPanel;
@@ -26,7 +28,6 @@ public class PlanetScripts : MonoBehaviour
         transform.parent.gameObject.name = this._solar.ToString();
         if (_title != null) _title.text = this._solar.ToString();
     }
-
 
     public void OnGrabed()
     {
@@ -69,6 +70,7 @@ public class PlanetScripts : MonoBehaviour
     {
         transform.SetParent(_target);
         transform.DOScale(_localScale,0.3f);
+        transform.DOLocalRotate(_startRotation,0.3f);
         transform.DOLocalMove(Vector3.zero, 0.3f).OnComplete(() => {
             transform.DOKill();
             transform.localEulerAngles = _startRotation;

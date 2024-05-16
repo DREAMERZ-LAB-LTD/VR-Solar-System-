@@ -8,10 +8,11 @@ public class DialogUI : MonoBehaviour
 {
     public TextMeshProUGUI _Title;
     public TextMeshProUGUI _Description;
-
+    public GameObject PipUp;
 
     private void Start()
     {
+        PipUp.SetActive(true);
         SolarController.instance.OnSolarEventTriggered += DisplayInfo;
     }
     private void OnDisable()
@@ -36,15 +37,17 @@ public class DialogUI : MonoBehaviour
 
             _Title.text = _planetInfo.solar.ToString();
             _Description.text = _planetInfo.description;
+            PipUp.SetActive(false);
             // Do something with _planetInfo
-            Debug.Log("Found planet: " + _planetInfo.solar.ToString());
+            //Debug.Log("Found planet: " + _planetInfo.solar.ToString());
         }
         else
         {
-            Debug.Log("Planet not found.");
+           // Debug.Log("Planet not found.");
             _Title.text ="";
             _Description.text = "";
-           
+            PipUp.SetActive(true);
+
         }
     }
 
