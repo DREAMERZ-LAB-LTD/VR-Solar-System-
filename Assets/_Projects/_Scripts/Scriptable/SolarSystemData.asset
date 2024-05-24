@@ -77,7 +77,7 @@ MonoBehaviour:
       soil, climate change, and many other important topics.'
     PlaneObj: {fileID: 7960243769344197870, guid: 91bb96471d120d249ba38dc3c2630602, type: 3}
     Speed: 0
-  - solar: 3
+  - solar: 4
     description: "Mars is a cold desert world. The average temperature on Mars is
       minus 85 degrees Fahrenheit \u2013 way below freezing. It is half the size
       of Earth. Mars is sometimes called the Red Planet. It's red because of rusty
@@ -91,7 +91,7 @@ MonoBehaviour:
       in the future.\r\n\r\n"
     PlaneObj: {fileID: 6153443978052708643, guid: 30d81be733d1ddd43af50f6c1a2ef840, type: 3}
     Speed: 0
-  - solar: 5
+  - solar: 6
     description: "Saturn isn\u2019t the only planet to have rings, but it definitely
       has the most beautiful ones. The rings we see are made of groups of tiny ringlets
       that surround Saturn. They\u2019re made of chunks of ice and rock. Like Jupiter,
@@ -101,7 +101,7 @@ MonoBehaviour:
       Now we know those \"handles\" turned out to be the rings of Saturn.\r\n\r"
     PlaneObj: {fileID: 4886655930937505732, guid: 6faeafa0b18a8284f982b60a2c2c6570, type: 3}
     Speed: 0
-  - solar: 4
+  - solar: 5
     description: "Jupiter is the biggest planet in our solar system. It's similar
       to a star, but it never got massive enough to start burning. It is covered
       in swirling cloud stripes. It has big storms like the Great Red Spot, which
@@ -116,7 +116,7 @@ MonoBehaviour:
       Spot is a centuries-old storm bigger than Earth\n"
     PlaneObj: {fileID: 6200441294366033232, guid: ba6dec7108d7d38408d6137ecf5cdda4, type: 3}
     Speed: 0
-  - solar: 6
+  - solar: 7
     description: 'Uranus is made of water, methane, and ammonia fluids above a small
       rocky center. Its atmosphere is made of hydrogen and helium like Jupiter and
       Saturn, but it also has methane. The methane makes Uranus blue.
@@ -149,7 +149,7 @@ MonoBehaviour:
 '
     PlaneObj: {fileID: 6073720410740747172, guid: 7adfd165e0b7ace479946ce9ecc4dfed, type: 3}
     Speed: 0
-  - solar: 7
+  - solar: 8
     description: "Neptune is dark, cold, and very windy. It's the last of the planets
       in our solar system. It's more than 30 times as far from the sun as Earth is.
       Neptune is very similar to Uranus. It's made of a thick fog of water, ammonia,
@@ -182,7 +182,7 @@ MonoBehaviour:
 '
     PlaneObj: {fileID: 2140203320816417273, guid: 8ed70776167877e42a8e953fdd89a0c0, type: 3}
     Speed: 0
-  - solar: 8
+  - solar: 9
     description: 'Pluto (minor-planet designation: 134340 Pluto) is a dwarf planet
       in the Kuiper belt, a ring of bodies beyond the orbit of Neptune. It is the
       ninth-largest and tenth-most-massive known object to directly orbit the Sun.
@@ -203,7 +203,7 @@ MonoBehaviour:
 '
     PlaneObj: {fileID: 2140203320816417273, guid: 8ed70776167877e42a8e953fdd89a0c0, type: 3}
     Speed: 0
-  - solar: 9
+  - solar: 10
     description: "The Sun's gravity holds the solar system together, keeping everything
       \u2013 from the biggest planets to the smallest particles of debris \u2013
       in its orbit. The connection and interactions between the Sun and Earth drive

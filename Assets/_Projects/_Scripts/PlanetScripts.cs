@@ -10,7 +10,7 @@ public class PlanetScripts : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _title;
     [SerializeField] public RotateAround targetObject;
     [SerializeField] public bool isGrabe = false;
-
+    [SerializeField] Transform targetTransform;
 
     public bool isStay = false;
     
@@ -22,9 +22,11 @@ public class PlanetScripts : MonoBehaviour
     Vector3 _localScale;
     private void Awake()
     {
+
+        targetTransform = targetObject.transform;
         _startRotation = transform.localEulerAngles;
         _localScale = transform.localScale;
-        // targetObject.transform = transform.parent;
+        targetTransform = transform.parent;
         transform.parent.gameObject.name = this._solar.ToString();
         if (_title != null) _title.text = this._solar.ToString();
     

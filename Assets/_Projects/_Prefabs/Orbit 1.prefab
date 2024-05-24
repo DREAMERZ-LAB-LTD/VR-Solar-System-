@@ -750,7 +750,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _solar: 2
   _title: {fileID: 464146685074708766}
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 502724166307969046}
   isGrabe: 0
+  targetTransform: {fileID: 4028953901192345029}
   isStay: 0
   _infoPanel: {fileID: 0}
