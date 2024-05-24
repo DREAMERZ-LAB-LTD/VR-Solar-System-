@@ -16,23 +16,10 @@ public class InfoPanel : MonoBehaviour
             if (_targetPlanet != null && !_targetPlanet.isGrabe && _targetPlanet.isStay)
             {
                 // ReleasePlanet(_targetPlanet); // First Relase last planet
-                _targetPlanet.MoveToTargetPosition(_targetPlanet.targetObject);
+                _targetPlanet.MoveToTargetPosition(_targetPlanet.targetObject.transform);
             }
              SelectedPlanet(_temp);
         }
-       
-
-
-        /*if (_tragetPlanet != null && _tragetPlanet.isStay)
-        {
-            ReleasePlanet();
-        }
-        else
-        {
-            _tragetPlanet = other.GetComponentInParent<PlanetScripts>();
-            SelectedPlanet();
-        }*/
-       
         
     }
     private void OnTriggerExit(Collider other)

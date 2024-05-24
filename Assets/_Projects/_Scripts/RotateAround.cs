@@ -14,13 +14,16 @@ public class RotateAround : MonoBehaviour
         if (target == null)
         {
             target = this.gameObject.transform;
-           
+
         }
-      //  speed += Random.Range(7.0f, 14.0f);
+        //  speed += Random.Range(7.0f, 14.0f);
         canMove = true;
+
+        
+
     }
 
-  
+
     void Update()
     {
         if (!canMove) return;

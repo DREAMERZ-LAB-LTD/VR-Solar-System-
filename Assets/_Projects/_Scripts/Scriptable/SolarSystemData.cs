@@ -10,12 +10,10 @@ public class SolarSystemData : ScriptableObject
         [TextArea(3, 10)]
         public string description;
         public GameObject PlaneObj;
+        public float Speed;
     }
 
     public PlanetInfo[] planets;
 
-
-
-    
     
 }

@@ -8,7 +8,7 @@ public class PlanetScripts : MonoBehaviour
 {
     [SerializeField] public Solar _solar;
     [SerializeField] private TextMeshProUGUI _title;
-    [SerializeField] public Transform targetObject;
+    [SerializeField] public RotateAround targetObject;
     [SerializeField] public bool isGrabe = false;
 
 
@@ -24,11 +24,18 @@ public class PlanetScripts : MonoBehaviour
     {
         _startRotation = transform.localEulerAngles;
         _localScale = transform.localScale;
-        targetObject = transform.parent;
+        // targetObject.transform = transform.parent;
         transform.parent.gameObject.name = this._solar.ToString();
         if (_title != null) _title.text = this._solar.ToString();
+    
     }
+    void Start(){
 
+        if(targetObject !=null)
+        {
+            targetObject.speed = SolarController.instance.SetOrbitalSpeed(_solar);
+        }
+    }
     public void OnGrabed()
     {
         if (!isGrabe)
@@ -63,7 +70,7 @@ public class PlanetScripts : MonoBehaviour
         else
         {
           
-            MoveToTargetPosition(targetObject);
+            MoveToTargetPosition(targetObject.transform);
         }
     }
     public void MoveToTargetPosition(Transform _target)

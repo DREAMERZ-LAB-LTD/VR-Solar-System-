@@ -24,11 +24,12 @@ MonoBehaviour:
       Mercury's exosphere is composed mostly of oxygen, sodium, hydrogen, helium,
       and potassium. Mercury doesn\u2019t have any moons."
     PlaneObj: {fileID: 8978764467769538282, guid: 54e663ed6ff92124ba3e84931bff8669, type: 3}
+    Speed: 0
   - solar: 1
     description: 'Venus looks like a very active planet. It has mountains and volcanoes.
       Venus is similar in size to Earth. Earth is just a little bit bigger.
 
-      
+
 
       Venus
       is unusual because it spins the opposite direction of Earth and most other
@@ -37,7 +38,7 @@ MonoBehaviour:
       takes 225 Earth days for Venus to go all the way around the Sun. That means
       that a day on Venus is a little longer than a year on Venus.
 
-      
+
 
       Since
       the day and year lengths are similar, one day on Venus is not like a day on
@@ -46,15 +47,16 @@ MonoBehaviour:
       Venus, even though it is still the same day on Venus! And because Venus rotates
       backwards, the Sun rises in the west and sets in the east.
 
-      
 
-      Just
-      like Mercury, Venus doesn''t have any moons.
 
-      
+      Just like
+      Mercury, Venus doesn''t have any moons.
+
+
 
 '
     PlaneObj: {fileID: 560833786488114821, guid: ba73b4424e7d1974f82575a23c849c24, type: 3}
+    Speed: 0
   - solar: 2
     description: 'Our home planet Earth is a rocky, terrestrial planet. It has a
       solid and active surface with mountains, valleys, canyons, plains and so much
@@ -66,14 +68,15 @@ MonoBehaviour:
       most of which break up in our atmosphere before they can strike the surface
       as meteorites.
 
-      
 
-      Since we live here, you might think we know
-      all there is to know about Earth. Not at all, actually! We have a lot we can
-      learn about our home planet. Right now, there are many satellites orbiting
-      Earth taking pictures and measurements. This is how we can learn more about
-      weather, oceans, soil, climate change, and many other important topics.'
+
+      Since we live here, you might think we know all there
+      is to know about Earth. Not at all, actually! We have a lot we can learn about
+      our home planet. Right now, there are many satellites orbiting Earth taking
+      pictures and measurements. This is how we can learn more about weather, oceans,
+      soil, climate change, and many other important topics.'
     PlaneObj: {fileID: 7960243769344197870, guid: 91bb96471d120d249ba38dc3c2630602, type: 3}
+    Speed: 0
   - solar: 3
     description: "Mars is a cold desert world. The average temperature on Mars is
       minus 85 degrees Fahrenheit \u2013 way below freezing. It is half the size
@@ -87,6 +90,7 @@ MonoBehaviour:
       things in the past. They also want to know if Mars could support life now or
       in the future.\r\n\r\n"
     PlaneObj: {fileID: 6153443978052708643, guid: 30d81be733d1ddd43af50f6c1a2ef840, type: 3}
+    Speed: 0
   - solar: 5
     description: "Saturn isn\u2019t the only planet to have rings, but it definitely
       has the most beautiful ones. The rings we see are made of groups of tiny ringlets
@@ -96,6 +100,7 @@ MonoBehaviour:
       At first he thought he was looking at three planets, or a planet with handles.
       Now we know those \"handles\" turned out to be the rings of Saturn.\r\n\r"
     PlaneObj: {fileID: 4886655930937505732, guid: 6faeafa0b18a8284f982b60a2c2c6570, type: 3}
+    Speed: 0
   - solar: 4
     description: "Jupiter is the biggest planet in our solar system. It's similar
       to a star, but it never got massive enough to start burning. It is covered
@@ -110,12 +115,13 @@ MonoBehaviour:
       has rings, but they\u2019re very hard to see.\r\nThe giant planet's Great Red
       Spot is a centuries-old storm bigger than Earth\n"
     PlaneObj: {fileID: 6200441294366033232, guid: ba6dec7108d7d38408d6137ecf5cdda4, type: 3}
+    Speed: 0
   - solar: 6
     description: 'Uranus is made of water, methane, and ammonia fluids above a small
       rocky center. Its atmosphere is made of hydrogen and helium like Jupiter and
       Saturn, but it also has methane. The methane makes Uranus blue.
 
-      
+
 
       Uranus
       also has faint rings. The inner rings are narrow and dark. The outer rings
@@ -135,13 +141,14 @@ MonoBehaviour:
       Uranus is the only planet that spins
       on its side.
 
-      Uranus spins the opposite direction as Earth and most
-      other planets.
+      Uranus spins the opposite direction as Earth and most other
+      planets.
 
-      
+
 
 '
     PlaneObj: {fileID: 6073720410740747172, guid: 7adfd165e0b7ace479946ce9ecc4dfed, type: 3}
+    Speed: 0
   - solar: 7
     description: "Neptune is dark, cold, and very windy. It's the last of the planets
       in our solar system. It's more than 30 times as far from the sun as Earth is.
@@ -153,6 +160,7 @@ MonoBehaviour:
       a gas giant. It is made of a thick soup of water, ammonia, and methane flowing
       over a solid core about the size of Earth.\r\nNeptune has a thick, windy atmosphere.\r\n\r\n"
     PlaneObj: {fileID: 2109367283062550590, guid: 5793311b710267043928afbeb0c3d48c, type: 3}
+    Speed: 0
   - solar: 8
     description: 'Pluto (minor-planet designation: 134340 Pluto) is a dwarf planet
       in the Kuiper belt, a ring of bodies beyond the orbit of Neptune. It is the
@@ -173,6 +181,7 @@ MonoBehaviour:
 
 '
     PlaneObj: {fileID: 2140203320816417273, guid: 8ed70776167877e42a8e953fdd89a0c0, type: 3}
+    Speed: 0
   - solar: 8
     description: 'Pluto (minor-planet designation: 134340 Pluto) is a dwarf planet
       in the Kuiper belt, a ring of bodies beyond the orbit of Neptune. It is the
@@ -193,6 +202,7 @@ MonoBehaviour:
 
 '
     PlaneObj: {fileID: 2140203320816417273, guid: 8ed70776167877e42a8e953fdd89a0c0, type: 3}
+    Speed: 0
   - solar: 9
     description: "The Sun's gravity holds the solar system together, keeping everything
       \u2013 from the biggest planets to the smallest particles of debris \u2013
@@ -215,3 +225,4 @@ MonoBehaviour:
       yellow glow of our Sun. There are several science fiction films featuring the
       Sun in the storyline.\r\n\r"
     PlaneObj: {fileID: 3548356298615962880, guid: 5f776740c447e45afb25edbca842de92, type: 3}
+    Speed: 0
