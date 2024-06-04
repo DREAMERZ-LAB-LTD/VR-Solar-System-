@@ -10,7 +10,6 @@ public class SolarController : MonoBehaviour
     public static SolarController instance;
     public SolarSystemData solarData;
     public Orbit[] orbits;
-
     private void Awake()
     {
         if (instance == null)

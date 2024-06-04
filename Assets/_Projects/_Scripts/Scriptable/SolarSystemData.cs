@@ -11,6 +11,7 @@ public class SolarSystemData : ScriptableObject
         public string description;
         public GameObject PlaneObj;
         public float Speed;
+        public AudioClip _audioClip;
     }
 
     public PlanetInfo[] planets;
