@@ -14,6 +14,8 @@ public class DialogUI : MonoBehaviour
     {
         PipUp.SetActive(true);
         SolarController.instance.OnSolarEventTriggered += DisplayInfo;
+        _Title.text = "";
+        _Description.text = "";
     }
     private void OnDisable()
     {
