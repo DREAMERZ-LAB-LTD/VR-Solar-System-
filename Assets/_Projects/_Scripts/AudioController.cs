@@ -1,18 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class AudioController : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private bool isMuted = false;
+    private AudioSource audioSource;
+
     void Start()
     {
-        
+        // Get the AudioSource component attached to the GameObject
+        audioSource = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ToggleMute()
     {
-        
+        // Toggle the mute state
+        isMuted = !isMuted;
+
+        // Set the mute state of the AudioSource
+        audioSource.mute = isMuted;
     }
 }

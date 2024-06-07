@@ -35,10 +35,31 @@ public class InfoPanel : MonoBehaviour
     {
         if (newPlanet != null)
         {
-             Debug.Log("Hand Enter ======= " + _targetPlanet);
+          
+
+            Debug.Log("Hand Enter ======= " + _targetPlanet);
             _targetPlanet = newPlanet;
             _targetPlanet._infoPanel = GetComponent<InfoPanel>();
             _targetPlanet.isStay = true;
+            if (_targetPlanet._solar == Solar.Sun)
+            {
+                _iteamPosition.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+            }
+            else if (_targetPlanet._solar == Solar.Jupiter)
+            {
+                _iteamPosition.localScale = new Vector3(0.6f, 0.6f, 0.6f);
+            }
+            else
+            if (_targetPlanet._solar == Solar.Pluto || _targetPlanet._solar == Solar.Mercury)
+            {
+                _iteamPosition.localScale = new Vector3(1.5f, 1.5f, 1.5f);
+            }
+            else
+            {
+                _iteamPosition.localScale = Vector3.one;
+            }
+
+
         }
     }
     // Ungroup and  send the planet to it's start orbit position
@@ -50,5 +71,6 @@ public class InfoPanel : MonoBehaviour
         lastPlanet.isStay = false;
         lastPlanet._infoPanel = null;
         lastPlanet = null;
+      //  _iteamPosition.localScale = Vector3.one;
     }
 }
