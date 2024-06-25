@@ -7,7 +7,7 @@ using DG.Tweening;
 public class PlanetScripts : MonoBehaviour
 {
     [SerializeField] public Solar _solar;
-    [SerializeField] private TextMeshProUGUI _title;
+    [SerializeField] public TextMeshProUGUI _title;
     [SerializeField] public RotateAround targetObject;
     [SerializeField] public bool isGrabe = false;
     [SerializeField] Transform targetTransform;
@@ -44,6 +44,7 @@ public class PlanetScripts : MonoBehaviour
         { 
             isGrabe = true;
             transform.SetParent(null);
+            if (_title != null) _title.transform.parent.gameObject.SetActive(false);
         }
     }
 
@@ -67,12 +68,15 @@ public class PlanetScripts : MonoBehaviour
             MoveToTargetPosition(_infoPanel._iteamPosition);
             Debug.Log("Move to UI Pose ");
             SolarController.instance.OnEventCall(_solar);
+            if (_title != null) _title.transform.parent.gameObject.SetActive(false);
 
         }
         else
         {
           
             MoveToTargetPosition(targetObject.transform);
+            if (_title != null) _title.transform.parent.gameObject.SetActive(true);
+
         }
     }
     public void MoveToTargetPosition(Transform _target)

@@ -16,10 +16,10 @@ public class InfoPanel : MonoBehaviour
             {
                 // ReleasePlanet(_targetPlanet); // First Relase last planet
                 _targetPlanet.MoveToTargetPosition(_targetPlanet.targetObject.transform);
+                if (_targetPlanet._title != null) _targetPlanet._title.transform.parent.gameObject.SetActive(true);
             }
              SelectedPlanet(_temp);
-        }
-        
+        } 
     }
     private void OnTriggerExit(Collider other)
     {
@@ -35,8 +35,6 @@ public class InfoPanel : MonoBehaviour
     {
         if (newPlanet != null)
         {
-          
-
             Debug.Log("Hand Enter ======= " + _targetPlanet);
             _targetPlanet = newPlanet;
             _targetPlanet._infoPanel = GetComponent<InfoPanel>();
@@ -58,8 +56,6 @@ public class InfoPanel : MonoBehaviour
             {
                 _iteamPosition.localScale = Vector3.one;
             }
-
-
         }
     }
     // Ungroup and  send the planet to it's start orbit position
@@ -71,6 +67,5 @@ public class InfoPanel : MonoBehaviour
         lastPlanet.isStay = false;
         lastPlanet._infoPanel = null;
         lastPlanet = null;
-      //  _iteamPosition.localScale = Vector3.one;
     }
 }

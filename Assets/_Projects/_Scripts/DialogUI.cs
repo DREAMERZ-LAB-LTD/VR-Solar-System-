@@ -41,16 +41,14 @@ public class DialogUI : MonoBehaviour
              PipUp.SetActive(false);
             audioSource.clip = _planetInfo._audioClip;
             if(audioSource.clip != null) { audioSource.Play(); } // Play Audio if _aduioSource is not null 
-
         }
         else
         {
-           // Debug.Log("Planet not found.");
+            Debug.Log("Planet not found.");
             _Title.text ="";
             _Description.text = "";
             PipUp.SetActive(true);
             if (audioSource.clip != null) { audioSource.Stop(); } // Stop Audio Source 
-
         }
     }
 
