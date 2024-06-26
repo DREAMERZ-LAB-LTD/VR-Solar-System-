@@ -23,11 +23,13 @@ public class AudioController : MonoBehaviour
         {
             _soundIcon.SetActive(false);
             _muteIcon.SetActive(true);
+            audioSource.Pause();
         }
         else
         {
             _soundIcon.SetActive(true);
             _muteIcon.SetActive(false);
+            audioSource.Play();
         }
     }
 }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 using static SolarSystemData;
 
 public class DialogUI : MonoBehaviour
@@ -10,6 +11,7 @@ public class DialogUI : MonoBehaviour
     public TextMeshProUGUI _Description;
     public GameObject PipUp;
     public AudioSource audioSource;
+    public Image _panelImage;
     private void Start()
     {
         PipUp.SetActive(true);
@@ -39,6 +41,7 @@ public class DialogUI : MonoBehaviour
             _Title.text = _planetInfo.solar.ToString();
             _Description.text = _planetInfo.description;
              PipUp.SetActive(false);
+            _panelImage.enabled = false;
             audioSource.clip = _planetInfo._audioClip;
             if(audioSource.clip != null) { audioSource.Play(); } // Play Audio if _aduioSource is not null 
         }
@@ -48,6 +51,7 @@ public class DialogUI : MonoBehaviour
             _Title.text ="";
             _Description.text = "";
             PipUp.SetActive(true);
+            _panelImage.enabled = true;
             if (audioSource.clip != null) { audioSource.Stop(); } // Stop Audio Source 
         }
     }
